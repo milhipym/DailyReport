@@ -1,0 +1,147 @@
+-----------------------------------com.dailyreport.network.JsonDatas.java-----------------------------------
+
+package com.dailyreport.network;
+
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("jsonschema2pojo")
+public class JsonDatas {
+
+@SerializedName("ErrorMsg")
+@Expose
+private String errorMsg;
+@SerializedName("ErrorCode")
+@Expose
+private String errorCode;
+
+public String getErrorMsg() {
+return errorMsg;
+}
+
+public void setErrorMsg(String errorMsg) {
+this.errorMsg = errorMsg;
+}
+
+public String getErrorCode() {
+return errorCode;
+}
+
+public void setErrorCode(String errorCode) {
+this.errorCode = errorCode;
+}
+
+}
+-----------------------------------com.dailyreport.network.LoginResult2.java-----------------------------------
+
+package com.dailyreport.network;
+
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("jsonschema2pojo")
+public class LoginResult2 {
+
+@SerializedName("rsCd")
+@Expose
+private String rsCd;
+@SerializedName("responseText")
+@Expose
+private String responseText;
+@SerializedName("jsonDatas")
+@Expose
+private JsonDatas jsonDatas;
+@SerializedName("currentPageNo")
+@Expose
+private Integer currentPageNo;
+@SerializedName("totCnt")
+@Expose
+private Integer totCnt;
+@SerializedName("countPerPage")
+@Expose
+private Integer countPerPage;
+@SerializedName("jsonStringDatas")
+@Expose
+private String jsonStringDatas;
+@SerializedName("messageShowYN")
+@Expose
+private String messageShowYN;
+@SerializedName("svcInfo")
+@Expose
+private String svcInfo;
+
+public String getRsCd() {
+return rsCd;
+}
+
+public void setRsCd(String rsCd) {
+this.rsCd = rsCd;
+}
+
+public String getResponseText() {
+return responseText;
+}
+
+public void setResponseText(String responseText) {
+this.responseText = responseText;
+}
+
+public JsonDatas getJsonDatas() {
+return jsonDatas;
+}
+
+public void setJsonDatas(JsonDatas jsonDatas) {
+this.jsonDatas = jsonDatas;
+}
+
+public Integer getCurrentPageNo() {
+return currentPageNo;
+}
+
+public void setCurrentPageNo(Integer currentPageNo) {
+this.currentPageNo = currentPageNo;
+}
+
+public Integer getTotCnt() {
+return totCnt;
+}
+
+public void setTotCnt(Integer totCnt) {
+this.totCnt = totCnt;
+}
+
+public Integer getCountPerPage() {
+return countPerPage;
+}
+
+public void setCountPerPage(Integer countPerPage) {
+this.countPerPage = countPerPage;
+}
+
+public String getJsonStringDatas() {
+return jsonStringDatas;
+}
+
+public void setJsonStringDatas(String jsonStringDatas) {
+this.jsonStringDatas = jsonStringDatas;
+}
+
+public String getMessageShowYN() {
+return messageShowYN;
+}
+
+public void setMessageShowYN(String messageShowYN) {
+this.messageShowYN = messageShowYN;
+}
+
+public String getSvcInfo() {
+return svcInfo;
+}
+
+public void setSvcInfo(String svcInfo) {
+this.svcInfo = svcInfo;
+}
+
+}

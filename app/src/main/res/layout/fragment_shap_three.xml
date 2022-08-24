@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonapi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APL SIGN"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvapi"/>
+
+    <TextView
+        android:id="@+id/tvapi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonapi"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <Button
+        android:id="@+id/buttonapi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DSM LOGIN Simple"
+        app:layout_constraintTop_toBottomOf="@+id/tvapi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvapi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonapi2"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <Button
+        android:id="@+id/buttonapi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DSM Login Json"
+        app:layout_constraintTop_toBottomOf="@+id/tvapi2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvapi3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonapi3"
+        tools:layout_editor_absoluteY="100dp" />
+    <Button
+        android:id="@+id/buttonapi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DSM WEEK"
+        app:layout_constraintTop_toBottomOf="@+id/tvapi3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvapi4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonapi4"
+        tools:layout_editor_absoluteY="100dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

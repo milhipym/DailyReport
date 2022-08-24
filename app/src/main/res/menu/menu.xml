@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/today"
+        android:enabled="true"
+        android:icon="@drawable/b"
+        android:title="투데이"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/today2"
+        android:enabled="true"
+        android:icon="@drawable/b"
+        android:title="투데이2"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/today3"
+        android:enabled="true"
+        android:icon="@drawable/b"
+        android:title="투데이3"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/today4"
+        android:enabled="true"
+        android:icon="@drawable/b"
+        android:title="투데이4"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/today5"
+        android:enabled="true"
+        android:icon="@drawable/b"
+        android:title="투데이5"
+        app:showAsAction="always"/>
+</menu>
