@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.Toast;
 
+import com.dailyreport.five.FiveFragment;
 import com.dailyreport.four.FourFragment;
 import com.dailyreport.one.TodayFragment;
 import com.dailyreport.three.ThreeFragment;
@@ -96,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
                         transaction.replace(R.id.mainframelayout, fourFragment).commit();
                         break;
                     case R.id.today5:
+                        FiveFragment fiveFragment = new FiveFragment();
+                        transaction.replace(R.id.mainframelayout, fiveFragment).commit();
                         break;
 
                 }
