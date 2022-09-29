@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.dailyreport.five.FiveFragment;
 import com.dailyreport.four.FourFragment;
+import com.dailyreport.monitoring.DbMonitorFragment;
 import com.dailyreport.one.TodayFragment;
 import com.dailyreport.three.ThreeFragment;
 import com.dailyreport.two.TwoFragment;
@@ -66,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
         setting();
         mContext = this;
         FragmentTransaction trInitPage = getSupportFragmentManager().beginTransaction();
-        TodayFragment todayFragment = new TodayFragment();
-        trInitPage.replace(R.id.mainframelayout, todayFragment).commit();
+        FiveFragment fiveFragment = new FiveFragment();
+        trInitPage.replace(R.id.mainframelayout, fiveFragment).commit();
     }
 
     private void setting() {
@@ -107,6 +108,20 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }//end init();
+
+
+    public void changeFragment(String screenName)
+    {
+        Log.d("YYYM", "changeFragment: "+screenName);
+        if (screenName.equals("DbMonitorFragment"))
+        {
+            DbMonitorFragment dbMonitorFragment = new DbMonitorFragment();
+            transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.mainframelayout, dbMonitorFragment).commit();
+        }
+
+    }
+
 
     public void requestPermission(final String permission, final int reqCode)
     {

@@ -4,7 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/b.xml" value="0.124" />
+        <entry key="app/src/main/res/drawable/eclipse_1.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/eclipse_2.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/eclipse_3.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/eclipse_4.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2345" />
+        <entry key="app/src/main/res/drawable/ic_mainbackimg.xml" value="0.3195" />
+        <entry key="app/src/main/res/drawable/ic_mainbackimg_logo.xml" value="0.3195" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_shap_five.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_shap_five_intro.xml" value="0.19401631912964643" />
+        <entry key="app/src/main/res/layout/fragment_shap_five_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_shap_one.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_shap_three.xml" value="0.22796352583586627" />
         <entry key="app/src/main/res/layout/layout.xml" value="0.19791666666666666" />
