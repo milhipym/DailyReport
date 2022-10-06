@@ -59,14 +59,9 @@ public class BarChartImple extends DbMonitorFragment {
         xAxis.setAxisLineColor(Color.BLACK);// 축 색
         xAxis.setDrawAxisLine(false);// 그래프 뒷 배경의 그리드 표시하지 않기
         xAxis.setDrawGridLines(false);
-/*        xAxis.setValueFormatter(new IndexAxisValueFormatter(){
-            @Override
-            public String getFormattedValue(float value) {
-                return super.getFormattedValue(value) + "r";
-            }
-        });*/
 
                 barChart.getAxisRight().setEnabled(false); // Y축 오른쪽 보이지않게
+                barChart.getAxisLeft().setEnabled(false);  // X축 오른쪽 보이지않게
         yAxis = barChart.getAxisLeft(); // Y축 왼쪽셋팅
         xAxis.setTextSize(10);
         yAxis.setTextColor(Color.BLACK);

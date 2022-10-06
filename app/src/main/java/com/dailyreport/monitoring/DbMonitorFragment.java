@@ -12,7 +12,10 @@ import androidx.fragment.app.Fragment;
 
 import com.dailyreport.R;
 import com.dailyreport.chart.BarChartImple;
+import com.dailyreport.chart.LineChartImple;
+import com.dailyreport.chart.PieChartImple;
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
@@ -23,6 +26,7 @@ import java.util.ArrayList;
 public class DbMonitorFragment extends Fragment {
     public ViewGroup rootview;
     public BarChart barChart;
+    public LineChart lineChart;
 
     @Nullable
     @Override
@@ -41,6 +45,8 @@ public class DbMonitorFragment extends Fragment {
         //로딩
         //데이터 통신을 하고 리턴을 데깅
         BarChartImple barChartImple = new BarChartImple(rootview);
+        LineChartImple lineChartImple = new LineChartImple(rootview);
+        PieChartImple pieChartImple = new PieChartImple(rootview);
     }
 /*
 * BarEntry   : x, y 쌍으로 실제 데이터 조합
