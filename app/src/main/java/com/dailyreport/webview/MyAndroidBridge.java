@@ -1,8 +1,10 @@
 package com.dailyreport.webview;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.os.Environment;
 import android.os.Handler;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
@@ -15,11 +17,13 @@ import com.dailyreport.MainActivity;
 public class MyAndroidBridge {
     private Handler mHandler = null;
     private WebView mWebView = null;
+    private Context mContext = null;
 
 
-    public MyAndroidBridge(WebView _mWebView){
+    public MyAndroidBridge(WebView _mWebView, Context context){
         mWebView = _mWebView;
         mHandler = new Handler();
+        mContext = context;
     }
 
     @JavascriptInterface
@@ -72,8 +76,20 @@ public class MyAndroidBridge {
         });
     }
 
+    @JavascriptInterface
+    public void UploadFile()
+    {
+        Log.d("YYYM", "UploadFile.");
 
-    public void googlFitResult(){
+        String path = mContext.getExternalFilesDir(Environment.DIRECTORY_DCIM).getAbsolutePath();
+
+    }
+
+    @JavascriptInterface
+    public void DownloadFile(String callbaId, String strSumthing)
+    {
+        Log.d("YYYM", "UploadFile."+callbaId+ ", ");
+
 
     }
 

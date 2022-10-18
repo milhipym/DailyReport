@@ -37,7 +37,7 @@ public class FourFragment extends Fragment {
         https://kimdabang.tistory.com/entry/안드로이드-WebViewClient와-WebChromeClient
 */
         WebView webView = rootview.findViewById(R.id.webView);
-        MyAndroidBridge myAndroidBridge = new MyAndroidBridge(webView);
+        MyAndroidBridge myAndroidBridge = new MyAndroidBridge(webView, getContext());
         webView.addJavascriptInterface(myAndroidBridge, "aos");
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setBuiltInZoomControls(false);

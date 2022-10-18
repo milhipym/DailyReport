@@ -39,7 +39,7 @@ public class TwoFragment extends Fragment {
 */
         WebView webView = rootview.findViewById(R.id.webView);
         ((MainActivity)MainActivity.mContext).mWebview = webView;
-        MyAndroidBridge myAndroidBridge = new MyAndroidBridge(webView);
+        MyAndroidBridge myAndroidBridge = new MyAndroidBridge(webView, getContext());
         webView.addJavascriptInterface(myAndroidBridge, "aos");
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setBuiltInZoomControls(false);
